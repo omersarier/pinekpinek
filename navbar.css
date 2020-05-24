@@ -1,0 +1,70 @@
+.navbar{
+width: 100%;
+height: auto;
+
+margin: 0 auto;
+}
+header{
+  
+  background: #202020;
+
+
+}
+
+#logo{
+  float: left;
+  margin-top: 0px ;
+  padding: 5px;
+  border: solid 4px #181818;                                                         /*  Arkaplan üzerinde çalış.      */
+ background-color: #55d6aa;
+ background-origin: content-box;
+ border-radius: 4px;
+  
+}
+nav{float:right;}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li{
+  display: inline-block;
+  margin-left: 70px;
+  margin-right: 70px;
+  padding-top: 40px;
+  position: relative;
+}
+nav  a{
+color: #ffffff;
+text-decoration: none;
+text-transform: uppercase;
+
+}
+nav a:hover{
+  color:#55d6aa;
+}
+nav a::before{
+  content: '';
+  display: block;
+  height: 5px;
+  background-color:#55d6aa;
+
+  position: absolute;
+  top:0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+
+
+}
+
+
